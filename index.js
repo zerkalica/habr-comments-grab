@@ -6,6 +6,14 @@ const file_path = path.join(process.cwd(), 'comments.json');
 
 const comments = JSON.parse(fs.readFileSync(file_path));
 
+const save = () => {
+   console.log(`saving ${file_path}...`);
+   fs.writeFileSync(file_path, JSON.stringify(comments, null, '  '));
+   console.log(`${file_path} done`);
+}
+
+const interval = setInterval(save, 30 * 1000);
+
 const c = new Crawler({
     maxConnections : 1,
     rateLimit: 1000,
@@ -59,6 +67,6 @@ for (const user of users) {
 
 
 c.on('drain', () => {
-   fs.writeFileSync(file_path, JSON.stringify(comments, null, '  '));
-   console.log(`${file_path} saved`);
+   clearInterval(interval);
+   save();
 });
