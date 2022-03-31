@@ -1,0 +1,162 @@
+{
+  "/ru/post/424497/comments/": {
+    "header": "Хватит подозревать разрабов в самозванстве. Научитесь лучше собеседовать",
+    "comments": {
+      "comment_24221209": {
+        "data": "31.03.2022 в 16:01",
+        "body": "<p>Как неимущего.</p>"
+      }
+    }
+  },
+  "/ru/company/edison/blog/316000/comments/": {
+    "header": "Нативные приложения обречены (часть 1)",
+    "comments": {
+      "comment_22742910": {
+        "data": "27.02.2021 в 18:58",
+        "body": "<p>А чем, собственно, wasm не подходит на эту роль?</p>"
+      }
+    }
+  },
+  "/ru/post/490524/comments/": {
+    "header": "Последовательный fetch и 5 способов решения",
+    "comments": {
+      "comment_21343486": {
+        "data": "02.03.2020 в 11:00",
+        "body": "<p>Конечно: <a href=\"https://github.com/eigenmethod/mol/blob/master/fiber/readme.md\" rel=\"nofollow\">https://github.com/eigenmethod/mol/blob/master/fiber/readme.md</a></p><br/> <p>Можно даже так, в 3 строки:</p><br/> <pre><code class=\"plaintext\">const syncFakeFetch = $mol_fiber_sync( fakeFetch ) const fetchReducer = ( arg , url )=> syncFakeFetch( url , arg ) const fiberWay = $mol_fiber_root( ()=> urls.reduce( fetchReducer , undefined ) )</code></pre>"
+      },
+      "comment_21340304": {
+        "data": "01.03.2020 в 10:20",
+        "body": "<p>Я просто оставлю это здесь:</p><br/> <pre><code class=\"javascript\">const syncFakeFetch = $mol_fiber_sync( fakeFetch ) const fiberWay = $mol_fiber_root( ()=> { return urls.reduce( ( arg , url )=> syncFakeFetch( url , arg ) , undefined ) } )</code></pre>"
+      }
+    }
+  },
+  "/ru/post/490056/comments/": {
+    "header": "Чёрный Ящик: забудьте о логировании",
+    "comments": {
+      "comment_21327924": {
+        "data": "27.02.2020 в 10:43",
+        "body": "<p>Я не совсем понял, что вы пишете в логи, но вы не хотите писать их в более структурированном и наглядном виде? Например, в формате <a href=\"https://github.com/nin-jin/tree.d\" rel=\"nofollow\">tree</a>:</p><br/> <pre><code class=\"plaintext\">error time \\2019-02-21 15:54:11:486 class \\io.infinite.pigeon.threads.SenderThread method \\SELF_TEST_RETRY_OUTPUT_RETRY_SENDER_1_RETRY guid \\a64aceed-8e4c-4d4b-8030-0c23bc3b3f0d type \\java.lang.NullPointerException stack \\at io.infinite.pigeon.threads.SenderThread.sendMessage(SenderThread.groovy:98) \\at io.infinite.pigeon.threads.SenderThread.run(SenderThread.groovy:44) calls \\sendMessage(60,5,100,6) \\run(40,5,50,6)</code></pre><br/> <p>Вместо этого нечитаемого месива:</p><br/> <pre><code class=\"plaintext\">2019-02-21 15:54:11:486|error|SELF_TEST_RETRY_OUTPUT_RETRY_SENDER_1_RETRY|io.infinite.pigeon.threads.SenderThread|EXCEPTION (first occurrence): 2019-02-21 15:54:11:492|error|SELF_TEST_RETRY_OUTPUT_RETRY_SENDER_1_RETRY|io.infinite.pigeon.threads.SenderThread|a64aceed-8e4c-4d4b-8030-0c23bc3b3f0d 2019-02-21 15:54:11:493|error|SELF_TEST_RETRY_OUTPUT_RETRY_SENDER_1_RETRY|io.infinite.pigeon.threads.SenderThread|java.lang.NullPointerException at io.infinite.pigeon.threads.SenderThread.sendMessage(SenderThread.groovy:98) at io.infinite.pigeon.threads.SenderThread.run(SenderThread.groovy:44) 2019-02-21 15:54:11:493|error|SELF_TEST_RETRY_OUTPUT_RETRY_SENDER_1_RETRY|io.infinite.pigeon.threads.SenderThread|METHOD EXCEPTION: sendMessage.io.infinite.pigeon.threads.SenderThread(60,5,100,6) 2019-02-21 15:54:11:493|error|SELF_TEST_RETRY_OUTPUT_RETRY_SENDER_1_RETRY|io.infinite.pigeon.threads.SenderThread|EXCEPTION (additional occurrence): 2019-02-21 15:54:11:494|error|SELF_TEST_RETRY_OUTPUT_RETRY_SENDER_1_RETRY|io.infinite.pigeon.threads.SenderThread|a64aceed-8e4c-4d4b-8030-0c23bc3b3f0d 2019-02-21 15:54:11:494|error|SELF_TEST_RETRY_OUTPUT_RETRY_SENDER_1_RETRY|io.infinite.pigeon.threads.SenderThread|METHOD EXCEPTION: run.io.infinite.pigeon.threads.SenderThread(40,5,50,6)</code></pre>"
+      }
+    }
+  },
+  "/ru/post/487606/comments/": {
+    "header": "Визуализация линий напряженности и движений электростатических зарядов, симулирование движения планет солнечной системы",
+    "comments": {
+      "comment_21320680": {
+        "data": "25.02.2020 в 17:50",
+        "body": "<p>Если вы про эту теорему: <a href=\"https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%93%D0%B0%D1%83%D1%81%D1%81%D0%B0\" rel=\"nofollow\">https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%93%D0%B0%D1%83%D1%81%D1%81%D0%B0</a></p><br/> <p>То какое она имеет отношение к обсуждаемому вопросу? Напомню, форма Солнца не сферическая.</p>"
+      },
+      "comment_21252704": {
+        "data": "09.02.2020 в 17:15",
+        "body": "<p><a href=\"https://habr.com/ru/post/377651/#comment_16733413\">https://habr.com/ru/post/377651/#comment_16733413</a><br/> Тут я сделал Меркурию прецессию исключительно в рамках ньютоновской механики.</p>"
+      }
+    }
+  },
+  "/ru/post/489306/comments/": {
+    "header": "[Habr]: Донаты",
+    "comments": {
+      "comment_21305714": {
+        "data": "21.02.2020 в 09:57",
+        "body": "<p>Под своими постами видел раньше, но по ходу дела после слива кармы эта кнопка пропадает.</p>"
+      }
+    }
+  },
+  "/ru/post/486174/comments/": {
+    "header": "У меня нулевая текучка",
+    "comments": {
+      "comment_21207620": {
+        "data": "30.01.2020 в 07:08",
+        "body": "<p>Большинство людей не понимает, что поиск виноватых не решает проблему, а лишь усугубляет её. Проблему решает только поиск решения. А когда есть решение — не важно уже кто виноват.</p>"
+      }
+    }
+  },
+  "/ru/post/483864/comments/": {
+    "header": "Быстрее, чем C++; медленнее, чем PHP",
+    "comments": {
+      "comment_21183768": {
+        "data": "24.01.2020 в 11:54",
+        "body": "<p>Позволил себе <a href=\"https://tinyurl.com/rpm8sbl\" rel=\"nofollow\">пооптимизировать ваш алгоритм на D</a>.</p><br/> <p>Добавил функцию min, которая не использует ветвления:</p><br/> <pre><code class=\"plaintext\">auto min(N)(N a, N b) { auto d = b - a; return a + (d &amp; (d >> (N.sizeof * 8 - 1))); }</code></pre><br/> <p>Избавился от второго массива и лишних обращений к массивам по индексу:</p><br/> <pre><code class=\"plaintext\">long levDist(String)(in String str1, in String str2) { if (str1.length == 0) return str2.length; if (str2.length == 0) return str1.length; long[] costs = str1.length.to!long.iota.array; foreach (i, char1; str1) { auto delCost = costs[0]; auto insCost = i.to!long + 1; foreach (j, char2; str2) { auto substCost = delCost; if (char1 == char2) --substCost; delCost = costs[j]; insCost = 1 + substCost.min(delCost).min(insCost); costs[j] = insCost; } } return costs[str1.length - 1]; }</code></pre><br/> <p>Ну и код переписал более идиоматично. Возможно где-то накосячил, не до конца разобравшись в алгоритме.</p>"
+      }
+    }
+  },
+  "/ru/post/433850/comments/": {
+    "header": "Luxon — новая библиотека для работы с датами от команды Moment.js",
+    "comments": {
+      "comment_21169012": {
+        "data": "21.01.2020 в 17:39",
+        "body": "<p>mol_time_all.max.js = 20KB (1.1.1)</p>"
+      }
+    }
+  },
+  "/ru/company/dododev/blog/483794/comments/": {
+    "header": "Уходя уходи: почему не стоит принимать контроффер",
+    "comments": {
+      "comment_21149044": {
+        "data": "17.01.2020 в 19:43",
+        "body": "<p>Я когда пришёл за повышением спустя год работы, мне сказали, что повысят, если возьму доп обязанности и хорошо покажу себя. Ну я согласился. По итогу нашли недовольство от одного из клиентов, и ничего не повысили. Чуть позже в другом месте мне предложили сходу почти в 2 раза больше. Так компания растеряла весь отдел.</p>"
+      }
+    }
+  },
+  "/ru/post/343078/comments/": {
+    "header": "Непричёсанные мысли по поводу формата сохранения: теория",
+    "comments": {
+      "comment_21125574": {
+        "data": "13.01.2020 в 15:47",
+        "body": "<p>Не могу не поделиться своим разбором форматов данных: <a href=\"https://youtu.be/vBqJWQzPB3Y?list=PLXyFFhv8ucKSC96WOd7Ju2HmEWTA3jPa5&amp;t=5652\" rel=\"nofollow\">https://youtu.be/vBqJWQzPB3Y?list=PLXyFFhv8ucKSC96WOd7Ju2HmEWTA3jPa5&amp;t=5652</a></p>"
+      }
+    }
+  },
+  "/ru/company/yandex/blog/482926/comments/": {
+    "header": "Arc — система контроля версий для монорепозитория. Доклад Яндекса",
+    "comments": {
+      "comment_21113052": {
+        "data": "10.01.2020 в 18:09",
+        "body": "<p>Вы молодец, что делаете дополнительную бессмысленную работу по актуализации каждого комита после ребейза. Успехов вам. Нормальные же пацаны просто не занимаются этой ерундой и актуализируют лишь один единственный мерж-комит, а оставшееся время тратят на более полезные вещи, чем подделка истории.</p><br/> <p>Как ни пытайтесь вы преуменьшить значимость проблем ребейза, суть не поменяется: при ребейзе проблемы есть, при мерже — нет. И не надо высасывать из пальца проблемы мержа и выдавать за них проблемы вашего процесса или гит-клиента. Тот же TortoiseGit всё отлично показывает.</p><br/> <p>Ну и про CI — вы реально предлагаете гонять CI по всем коммитам, а не только по последнему? И это в ваших условиях, когда \"пересборки и проверки занимают достаточно много времени\". Впрочем, вам бы стоило прежде всего решить проблему долгой сборки, так как она много чему мешает. Не только использованию bisect.</p>"
+      },
+      "comment_21107448": {
+        "data": "09.01.2020 в 18:04",
+        "body": "<p><a href=\"https://habr.com/ru/company/mailru/blog/340558/\">https://habr.com/ru/company/mailru/blog/340558/</a><br/> <a href=\"https://habr.com/ru/post/179123/\">https://habr.com/ru/post/179123/</a><br/> <a href=\"https://habr.com/ru/post/179673/\">https://habr.com/ru/post/179673/</a></p>"
+      },
+      "comment_21102402": {
+        "data": "08.01.2020 в 17:27",
+        "body": "<p>Ребята, вы всё делаете не правильно. И сейчас я объясню почему.</p><br/> <p><img src=\"https://habrastorage.org/r/w780q1/webt/l3/y8/lq/l3y8lqxua4etd-ukds2vvc5kxkg.jpeg\" data-src=\"https://habrastorage.org/webt/l3/y8/lq/l3y8lqxua4etd-ukds2vvc5kxkg.jpeg\" data-blurred=\"true\"/></p><br/> <p>То есть вы сами себе создали проблему, засунув все проекты в один репозиторий, а теперь героически решаете её. Ваши проекты релизятся независимо друг от друга в разное время разными людьми. Разрабатываются они тоже разными людьми. Используют разные системы сборки, языки, фреймворки. Друг от друга проекты почти никак не зависят (за исключением небольшого числа общих библиотек). Так какого ж рожна они все делают в одном репозитории? Ну то есть понятно, что исторически сложилось, ибо SVN, где веток как таковых нет, а транк в транке транка — это типичная ситуация. Но не пора бы уже взрослеть и решать проблемы в корне, а не лепить костыли к когда-то принятым недальновидным архитектурным решениям?</p><br/> <blockquote>мы не пытаемся загрузить все заранее. И всякие тяжелые операции мы выносим на сервер</blockquote><p>Замечательно. Почти любые операции прибивают разработчика к серверу и зависят от скорости интернета. Современные разработчики вспоминают эту особенность SVN как страшный сон, а вы так и застряли в прошлом веке, не сумев в децентрализацию. Работа в поезде, самолёте, в окружении 30 файфай-точек, в подвальном кафе, через забитый открытый файфай? Не, только в офисе и по проводу.</p><br/> <p><img src=\"https://habrastorage.org/r/w780q1/webt/ig/jg/jw/igjgjww9nzy70irbsg-svup6_vi.jpeg\" data-src=\"https://habrastorage.org/webt/ig/jg/jw/igjgjww9nzy70irbsg-svup6_vi.jpeg\" data-blurred=\"true\"/></p><br/> <p>И какой смысла повторять чей-то апи не полностью? И при этом брать за объект для подражания набор команд, который не ругал за бестолковость только ленивый. Почему было не взять за основу тот же Меркуриал, который более дружелюбен к человекам? Более того, дальше вы пишете:</p><br/> <blockquote>мы движемся в сторону создания интерфейса более высокого уровня, который упрощал бы типичные сценарии. Это в чем-то похоже на подход git-flow</blockquote><p>То есть, вы не проанализировали ещё, как это всё будет использоваться (а иначе бы уже реализовали нужные команды), а уже взялись за реализацию. И как результат — реализация \"веток\" совершенно не учитывает то, как эти ветки будут использоваться:</p><br/> <blockquote>Довольно важная операция для системы контроля версий — это поиск наименьшего общего предка для двух коммитов.</blockquote><p>Из дальнейшего текста видно, что эта операция вам нужна лишь для определения начала ветки. Проблема с поиском начала ветки есть лишь в тех системах контроля версий, которые не умеют в собственно ветки. Зачем вы берёте тупую модель гита с указателями на голову, к которой приходится прикручивать костыли в виде пре-коммит хуков, добавляющих имя ветки в сообщение коммита? В том же Меркуриале вообще нет никакой проблемы дойти до начала ветки безо всяких поисков в ширину. Вы перед тем, как браться за велосипед вообще смотрели на системы контроля версий кроме гит-а и свн-а?</p><br/> <p><img src=\"https://habrastorage.org/r/w780q1/webt/uq/9a/bv/uq9abvkh2dunwxijq1vpuqefh7a.jpeg\" data-src=\"https://habrastorage.org/webt/uq/9a/bv/uq9abvkh2dunwxijq1vpuqefh7a.jpeg\" data-blurred=\"true\"/></p><br/> <p>А за баловство с ребейзами в приличном обществе вообще руки отрывают. Они приводят к куче сломанных коммитов в истории. Либо к куче лишней работы по исправлению всех ребейзнутых коммитов. Особенно это весело при использовании bisect. Ах да, у вас же и bisect-а, по всей видимости, нет.</p>"
+      }
+    }
+  },
+  "/ru/post/482702/comments/": {
+    "header": "Действительно ли нам нужен TypeScript в 2020?",
+    "comments": {
+      "comment_21087914": {
+        "data": "03.01.2020 в 16:34",
+        "body": "<p>Это и есть те самые извращения. Но да, всё это возможно:<br/> <a href=\"https://github.com/eigenmethod/mol/blob/master/data/readme.md#units\" rel=\"nofollow\">https://github.com/eigenmethod/mol/blob/master/data/readme.md#units</a></p>"
+      }
+    }
+  },
+  "/ru/post/482318/comments/": {
+    "header": "Почему Rust должен стать функциональным языком программирования",
+    "comments": {
+      "comment_21074288": {
+        "data": "29.12.2019 в 12:28",
+        "body": "<pre><code class=\"plaintext\">if (i &lt;= j) swap(i, j)</code></pre><br/> <p>Как-то странно вы реализовали <a href=\"https://ru.wikipedia.org/wiki/%D0%91%D1%8B%D1%81%D1%82%D1%80%D0%B0%D1%8F_%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0#%D0%A0%D0%B0%D0%B7%D0%B1%D0%B8%D0%B5%D0%BD%D0%B8%D0%B5_%D0%A5%D0%BE%D0%B0%D1%80%D0%B0\" rel=\"nofollow\">алгоритм Хоара</a>.</p><br/> <p>Правильно было бы как-то так:</p><br/> <pre><code class=\"plaintext\">auto quickSort( Item )( Item[] items ) { if( items.length &lt; 2 ) return items; auto pivot = items[ $ / 2 ]; size_t left = 0; size_t right = items.length - 1; while( left &lt; right ) { while( items[left] &lt; pivot ) ++left; while( items[right] > pivot ) --right; if( left >= right ) break; swap( items[left++] , items[right--] ); } items[ 0 .. left ].quickSort; items[ left .. $ ].quickSort; return items; }</code></pre><br/> <p>При этом в императивной форме алгоритм простой, понятный и гарантированно быстрый. А что там наоптимизирует компилятор в функциональной форме — одному рандому известно.</p><br/> <p><a href=\"https://habr.com/ru/users/boomburum/\" class=\"user_link\">Boomburum</a> у вас на больших страницах адски грузит процессор яндекс-метрика:</p><br/> <p><img src=\"https://habrastorage.org/r/w1560/webt/vh/qo/k-/vhqok-lmxracjqju4m4x_lfohm4.png\" data-src=\"https://habrastorage.org/webt/vh/qo/k-/vhqok-lmxracjqju4m4x_lfohm4.png\"/></p>"
+      }
+    }
+  },
+  "/ru/company/yandex/blog/480090/comments/": {
+    "header": "Open source – наше всё",
+    "comments": {
+      "comment_21018528": {
+        "data": "16.12.2019 в 20:30",
+        "body": "<p>А Сноуден — это фантастика.</p>"
+      }
+    }
+  },
+  "/ru/post/480306/comments/": {
+    "header": "Зачем биться в закрытую дверь?",
+    "comments": {
+      "comment_21013954": {
+        "data": "15.12.2019 в 20:01",
+        "body": "<p>Конечно, хромосома либо X, либо Y.</p>"
+      }
+    }
+  }
+}
