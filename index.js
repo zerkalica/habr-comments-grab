@@ -6,13 +6,25 @@ const file_path = path.join(process.cwd(), 'comments.json');
 
 const comments = JSON.parse(fs.readFileSync(file_path));
 
+const timeout = 30 * 1000;
+
+let saving = false;
+
 const save = () => {
-   console.log(`saving ${file_path}...`);
-   fs.writeFileSync(file_path, JSON.stringify(comments, null, '  '));
-   console.log(`${file_path} done`);
+   if (saving) return;
+
+   try {
+     console.log(`saving ${file_path}...`);
+     saving = true;
+     fs.writeFileSync(file_path, JSON.stringify(comments, null, '  '));
+     console.log(`${file_path} done`);
+   } catch (e) {
+     console.error('save', file_path, e);
+   }
+   saving = false;
 }
 
-const interval = setInterval(save, 30 * 1000);
+let interval = setInterval(save, timeout);
 
 const c = new Crawler({
     maxConnections : 1,
